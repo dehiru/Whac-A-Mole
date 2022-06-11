@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ResultFragment">
+
+    <TextView
+        android:id="@+id/score"
+        style="@style/Widget.WacAMOle.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_score"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/score_value"
+        app:layout_constraintEnd_toStartOf="@id/best_score"
+        tools:text="Your score:"/>
+
+    <TextView
+        android:id="@+id/score_value"
+        style="@style/Widget.WacAMOle.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline4"
+        app:layout_constraintTop_toBottomOf="@id/score"
+        app:layout_constraintBottom_toTopOf="@id/play_again_btn"
+        app:layout_constraintStart_toStartOf="@id/score"
+        app:layout_constraintEnd_toEndOf="@id/score"
+        tools:text="10"/>
+
+    <TextView
+        android:id="@+id/best_score"
+        style="@style/Widget.WacAMOle.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/best_score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/best_score_value"
+        app:layout_constraintStart_toEndOf="@id/score"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Best score:"/>
+
+    <TextView
+        android:id="@+id/best_score_value"
+        style="@style/Widget.WacAMOle.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintTop_toBottomOf="@id/best_score"
+        app:layout_constraintBottom_toTopOf="@id/play_again_btn"
+        app:layout_constraintStart_toStartOf="@id/best_score"
+        app:layout_constraintEnd_toEndOf="@id/best_score"
+        tools:text="25"/>
+
+    <Button
+        android:id="@+id/play_again_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        app:layout_constraintTop_toBottomOf="@id/play_again_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
