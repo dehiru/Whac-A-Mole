@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android_projects/WhacAMole/app/src/main/res/font/font.xml" value="0.284375" />
         <entry key="..\:/Android_projects/WhacAMole/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
         <entry key="..\:/Android_projects/WhacAMole/app/src/main/res/layout/fragment_game.xml" value="0.25416666666666665" />
         <entry key="..\:/Android_projects/WhacAMole/app/src/main/res/layout/fragment_result.xml" value="0.25416666666666665" />
