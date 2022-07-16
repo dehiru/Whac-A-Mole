@@ -64,7 +64,7 @@ class GameFragment : Fragment() {
             var timeLeft = GAME_LENGTH_SECONDS
             while(true) {
                 binding.timerValue.text = timeLeft.toString()
-                repeat(1000 / UPDATE_FREQUENCY_MS.toInt()) {
+                repeat(2) {
                     chooseActiveCell()
                 }
                 timeLeft--
